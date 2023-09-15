@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo</title>
+</head>
+<body>
+<form action="" method="post" th:object="${contacto}">
+    <div>
+        <label for="nombre">Nombres</label>
+        <input id="nombre" type="text" th:field="*{nombre}">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" th:field="*{email}">
+    </div>
+    <div>
+        <label for="telefono">Telefono</label>
+        <input id="telefono" type="number" th:field="*{telefono}">
+    </div>
+    <div>
+        <label for="direccion">Direccion</label>
+        <input id="direccion" type="text" th:field="*{direccion}">
+    </div>
+    <div>
+        <label for="fechaNacimineto">Fecha de Nacimiento</label>
+        <input id="fechaNacimineto" type="date" th:field="*{fechaNacimineto}">
+    </div>
+    <div>
+        <label for="fechaRegitro">Fecha de Registro</label>
+        <input id="fechaRegitro" type="date" th:field="*{fechaRegitro}">
+    </div>
+    <button>Save Contacto</button>
+</form>
+</body>
+</html>

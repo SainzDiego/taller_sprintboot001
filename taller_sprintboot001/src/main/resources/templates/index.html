@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>SPRING BOOT</title>
+</head>
+<body>
+<h1>HOLA MUMDO SPRING BOOT APP</h1>
+<H2>lISTA DE CONTACTOS</H2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>EMAIL</th>
+        <th>TELEFONO</th>
+        <th>DIRECCION</th>
+        <th>FECHA DE NACIMINENTO</th>
+        <th>FECHA DE REGISTRO</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contacto:${contactos}">
+        <td th:text="${contacto.id}"></td>
+        <td th:text="${contacto.nombre}"></td>=
+        <td th:text="${contacto.email}"></td>
+        <td th:text="${contacto.telefono}"></td>
+        <td th:text="${contacto.direccion}"></td>
+        <td th:text="${contacto.fechaNacimineto}"></td>
+        <td th:text="${contacto.fechaRegitro}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
